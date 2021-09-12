@@ -71,6 +71,7 @@ p:not(:last-child) {
 section {
     min-height: 100vh;
     padding-bottom: 2em;
+    background-color: #fdfff0;
 }
 .wraper {
     margin: 0 auto;
@@ -206,7 +207,7 @@ section {
 .parallax::before{
     content: "";
     position: absolute;
-    top: -60%;
+    top: -50%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -265,7 +266,19 @@ section {
 
 #about {
     min-height: 40vh;
-    margin-top: 60vh;
+    padding-top: 65vh;
+    background-color: transparent;
+    position: relative;
+}
+#about::after {
+    content: '';
+    position: absolute;
+    top: 65vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fdfff0;
+    z-index: -1;
 }
 .hands {
     display: flex;
