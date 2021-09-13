@@ -426,7 +426,6 @@ section {
     padding: 10px;
     border: 7px solid teal;
     font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 0.7px;
     font-size: 1.2em;
 }
 .contact-form input:focus, .contact-form textarea:focus {
