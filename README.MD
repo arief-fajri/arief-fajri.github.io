@@ -7,12 +7,12 @@ Preview : https://arief-fajri.github.io
 - [x] Responsive Layout
 - [X] Profile Section
 - [x] Expertise Section
-- [] Work Section
+- [ ] Work Section
     - [x] Image Layout
-    - [] Add Image Thumbnail
-    - [] Add CTA for each images
-    - [] add Display Image & Description
-- [] Contact Section
+    - [ ] Add Image Thumbnail
+    - [ ] Add CTA for each images
+    - [ ] add Display Image & Description
+- [ ] Contact Section
     - [x] Contact Form Layout
     - [x] Add QRcode for Email Address
-    - [] Send Message Integration
+    - [ ] Send Message Integration
