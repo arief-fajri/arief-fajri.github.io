@@ -60,13 +60,16 @@ html, body {
     font-family: 'B612', sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 p {
     font-size: 1.3rem;
-    text-align: justify;
 }
 p:not(:last-child) {
     margin-bottom: 1.2em;
+}
+a {
+    color: #008080;
 }
 section {
     min-height: 100vh;
@@ -122,15 +125,36 @@ section {
     perspective: 2px;
     transition: all 0.2s;
 }
+.parallax::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/face.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateZ(-4px) scale(1.7);
+    z-index: -1;
+}
 
 .mobile-header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 55px;
     z-index: 1000;
     transition: background-color .5s ease;
+}
+.mobile-header img {
+    float: right;
+    margin-right: 1.5rem;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
 }
 .scrolled {
     background-color: #fdfff0;
@@ -175,6 +199,9 @@ section {
 #burger+#burger-label span:last-child {
     top: 100%;
 }
+#burger+#burger-label:hover span, #burger+#burger-label:active span {
+    background-color: #900c3f;
+}
 #burger+#burger-label:hover {
     cursor: pointer;
 }
@@ -204,21 +231,6 @@ section {
     width: calc(100% - 240px);
 }
 
-.parallax::before{
-    content: "";
-    position: absolute;
-    top: -50%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("../images/face.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transform: translateZ(-2px) scale(1.15);
-    z-index: -1;
-}
-
 .intro {
     text-align: center;
     max-width: 420px;
@@ -237,12 +249,19 @@ section {
     line-height: 1;
     margin-bottom: 10px;
 }
+.intro-title span {
+    background-color: #4a4a4a;
+    color: #fdfff0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 .intro-subtitle {
     font-size: 1em;
     letter-spacing: 1px;
 }
 .intro p {
     text-align: center;
+    padding: 0 1em;
 }
 .first {
     margin-top: -100px;
@@ -262,6 +281,7 @@ section {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #about {
@@ -280,6 +300,9 @@ section {
     background-color: #fdfff0;
     z-index: -1;
 }
+#work, #expertise, #contact {
+    padding-top: 2rem;
+}
 .hands {
     display: flex;
     justify-content: space-between;
@@ -295,7 +318,7 @@ section {
     flex-direction: row-reverse;
 }
 .profile-text {
-    padding-right: 20px;
+    padding-right: 3em;
     width: 80%;
 }
 .profile-link {
@@ -327,9 +350,69 @@ section {
     font-weight: normal;
 }
 
+.expertise-flex {
+    flex-direction: row-reverse;
+}
+.expertise-certificate {
+    padding-left: 2em;
+}
+.expertise-certificate div {
+    border: 3px solid gray;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    width: 100%;
+}
+.expertise-certificate h2 {
+    text-align: center;
+}
+.expertise-certificate p {
+    margin-bottom: 0.5em;
+}
+.expertise-skill {
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1.2em;
+}
+.expertise-skill div {
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.3em;
+}
+.expertise-skill svg {
+    font-size: 5rem;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+.work-grid div {
+    height: 200px;
+    background-color: blueviolet;
+}
+
+.contact-side {
+    padding: 1.5em 3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.side-title {
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+.contact-side img {
+    width: auto;
+    max-height: 270px;
+    margin-top: -8px;
+}
 .contact-form {
     width: 50%;
-    padding: 2vw;
     display: flex;
     flex-direction: column;
 }
@@ -341,9 +424,10 @@ section {
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
-    border: 5px solid teal;
+    border: 7px solid teal;
     font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 1px;
+    letter-spacing: 0.7px;
+    font-size: 1.2em;
 }
 .contact-form input:focus, .contact-form textarea:focus {
     outline: none;
@@ -354,11 +438,11 @@ input.input-except {
     border-bottom: unset;
 }
 input.input-left {
-    border-right: 2.5px solid teal;
+    border-right: 3.5px solid teal;
     border-radius: 10px 0 0 0;
 }
 input.input-right {
-    border-left: 2.5px solid teal;
+    border-left: 3.5px solid teal;
     border-radius: 0 10px 0 0;
 }
 .contact-form textarea {
@@ -376,6 +460,7 @@ input.input-right {
     font-weight: bold;
     font-size: 1.5em;
     border: none;
+    cursor: pointer;
 }
 .contact-form button:hover, .contact-form button:active {
     background-color: #4a4a4a;
@@ -393,6 +478,12 @@ input.input-right {
         padding-top: 10vh;
         margin-top: 0;
     }
+    #about {
+        padding-top: 55vh;
+    }
+    #about::after {
+        top: 55vh;
+    }
 }
 
 @media (max-width: 960px) and (orientation: landscape) {
@@ -402,6 +493,20 @@ input.input-right {
     }
     .first {
         padding-top: 10vh;
+    }
+    .expertise-flex {
+        flex-direction: column;
+    }
+    .expertise-certificate {
+        display: flex;
+        padding-left: 0;
+        width: 100%;
+    }
+    .expertise-certificate div:not(:last-child) {
+        margin-right: 1em;
+    }
+    .expertise-skill {
+        width: 100%;
     }
 }
 @media (max-width: 760px) and (orientation: landscape) {
@@ -440,15 +545,51 @@ input.input-right {
     .fluid-flex {
         flex-direction: column;
     }
+    .expertise-certificate {
+        width: 100%;
+        padding-left: 0;
+    }
+    .expertise-skill {
+        width: 100%;
+        margin-top: 2em;
+    }
     .contact-form {
         width: 100%;
+    }
+    .contact-side img {
+        max-height: 210px;
     }
 }
 @media (max-width: 620px) {
     #burger:checked ~ .main {
         width: 100%;
     }
+    .content {
+        padding: 0 1.5em;
+    }
+    .input-group {
+        flex-direction: column;
+    }
+    input.input-left {
+        border-right: 7px solid teal;
+        border-radius: 10px 10px 0 0;
+    }
+    input.input-right {
+        border-left: 7px solid teal;
+        border-top: none;
+        border-radius: 0;
+    }
 }
+@media (max-width: 480px) {
+    .work-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: .7rem;
+    }
+    .work-grid div {
+        height: 150px;
+    }
+}
+
 @media (max-height: 480px) {
     .menu {
         justify-content: unset;
