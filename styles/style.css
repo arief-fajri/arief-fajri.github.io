@@ -309,6 +309,7 @@ section {
 }
 .hand-left, .hand-right {
     width: 275px;
+    height: auto;
     margin-top: -78px;
 }
 
