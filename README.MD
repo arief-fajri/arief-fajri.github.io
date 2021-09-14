@@ -15,4 +15,4 @@ Preview : https://arief-fajri.github.io
 - [ ] Contact Section
     - [x] Contact Form Layout
     - [x] Add QRcode for Email Address
-    - [ ] Send Message Integration
+    - [x] Send Message Integration
