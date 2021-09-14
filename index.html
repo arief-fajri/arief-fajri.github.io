@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta>
+    <meta name="description" content="Sensible to work on Front-end Development project. Passion for designing beautiful and functional user experience also focuses on writing clean, elegant, and efficient code.">
     <link rel="icon" type="image/png" href="images/logo.png" />
 
 
@@ -18,7 +18,7 @@
 <body>
     <div class="wraper">
         <div class="mobile-header">
-            <img src="images/logo.png" alt="logo">
+            <img src="images/logo.png" alt="logo" width="100" height="100">
         </div>
         <input id="burger" type="checkbox" />
         <label for="burger" id="burger-label">
@@ -113,8 +113,8 @@
 
             <section id="about">
                 <div class="hands">
-                    <img class="hand-left" src="images/hand-right.png" alt="hand right">
-                    <img class="hand-left" src="images/hand-left.png" alt="hand left">
+                    <img class="hand-left" src="images/hand-right.png" alt="hand right" width="350" height="300">
+                    <img class="hand-left" src="images/hand-left.png" alt="hand left" width="350" height="300">
                 </div>
                 <div class="intro first">
                     <h1 class="intro-name">ARIEF FAJRI</h1>
@@ -129,7 +129,7 @@
                 </div>
                 <div class="content profile">
                     <div class="profile-link">
-                        <a class="profile-item" href="/">
+                        <a class="profile-item" href="resume.pdf">
                             <svg class="profile-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
                                 viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
@@ -142,7 +142,7 @@
                             <h2 class="profile-title">Resume</h2>
                             <h4 class="profile-subtitle">View Resume</h4>
                         </a>
-                        <a class="profile-item" target="_blank" href="https://github.com/arief-fajri">
+                        <a class="profile-item" rel="noreferrer" target="_blank" href="https://github.com/arief-fajri" rel="noreferrer noopener">
                             <svg class="profile-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
                                 viewBox="0 0 48 48">
                                 <g fill="teal">
@@ -183,17 +183,17 @@
                 </div>
                 <div class="content fluid-flex expertise-flex">
                     <div class="expertise-certificate">
-                        <div>
+                        <div class="odd">
                             <h3>Responsive Web Design</h3>
                             <p>FreeCodeCamp </p>
                             <a href="https://www.freecodecamp.org/certification/acile/responsive-web-design"
-                                target="_blank" rel="noreferrer" style="font-weight: bold;">View Credentials</a>
+                                target="_blank" rel="noreferrer noopener" style="font-weight: bold;" aria-label="RWD Credensial">View Credentials</a>
                         </div>
-                        <div>
+                        <div class="even">
                             <h3>SQL (Basic)</h3>
                             <p>HackerRank </p>
                             <a href="https://www.hackerrank.com/certificates/b22dc030110a" target="_blank"
-                                rel="noreferrer" style="font-weight: bold;">View Credentials</a>
+                                rel="noreferrer noopener" style="font-weight: bold;" aria-label="SQL Credensial">View Credentials</a>
                         </div>
                     </div>
                     <div class="expertise-skill">
@@ -297,7 +297,7 @@
 
             <section id="work">
                 <div class="intro">
-                    <div class="intro-name">WORK</div>
+                    <h2 class="intro-name">WORK</h2>
                     <div class="intro-subtitle">A SHOWCASE OF DESIGN, DEVELOPMENT AND EXPERIMENTS
                     </div>
                 </div>
@@ -313,28 +313,23 @@
 
             <section id="contact">
                 <div class="intro">
-                    <div class="intro-name">CONTACT</div>
+                    <h2 class="intro-name">CONTACT</h2>
                     <div class="intro-subtitle">CURRENTLY AVAILABLE FOR CONTRACT OR FULL-TIME WORK, AND WOULD LOVE
                         TO HEAR FROM YOU</div>
                 </div>
                 <div class="content">
                     <div class="fluid-flex">
                         <div class="contact-side">
-                            <img src="images/qr-code.png" alt="Email">
+                            <img src="images/qr-code.png" alt="Email" width="1155" height="1155">
                             <div class="side-title">Scan My Email</div>
                         </div>
                         <form id="my-form" class="contact-form" action="https://formspree.io/f/mvodwwzd" method="POST">
-                            <div class="input-group">
-                                <input class="input-left" type="text" id="name" name="name" placeholder="Your Name.."
-                                    required>
-                                <input class="input-right" type="email" id="email" name="email"
-                                    placeholder="Your Email.." required>
-                            </div>
-                            <input class="input-except" type="text" id="subject" name="subject"
-                                placeholder="Your Subject.." required>
-                            <textarea id="message" name="message" placeholder="Write something.."></textarea>
+                            <input type="text" id="name" name="name" placeholder="Your Name.." aria-label="Your Name.." required>
+                            <input type="email" id="email" name="email" placeholder="Your Email.." aria-label="Your Email.." required>
+                            <input type="text" id="subject" name="subject" placeholder="Your Subject.." aria-label="Your Subject.." required>
+                            <textarea id="message" name="message" placeholder="Write something.." aria-label="Write something.."></textarea>
+                            <p id="my-form-status"></p>
                             <button type="submit">SEND MESSAGE</button>
-                            <p id="my-form-status">cek status line</p>
                         </form>
                     </div>
                 </div>
@@ -367,7 +362,7 @@
             });
         });
 
-        /*var form = document.getElementById("my-form");
+        var form = document.getElementById("my-form");
 
         async function handleSubmit(event) {
             event.preventDefault();
@@ -387,27 +382,6 @@
             });
         }
         form.addEventListener("submit", handleSubmit)
-
-        // Attach a submit handler to the form
-        $("#searchForm").submit(function (event) {
-
-            // Stop form from submitting normally
-            event.preventDefault();
-
-            // Get some values from elements on the page:
-            var $form = $(this),
-                term = $form.find("input[name='s']").val(),
-                url = $form.attr("action");
-
-            // Send the data using post
-            var posting = $.post(url, { s: term });
-
-            // Put the results in a div
-            posting.done(function (data) {
-                var content = $(data).find("#content");
-                $("#result").empty().append(content);
-            });
-        });*/
     </script>
 </body>
 

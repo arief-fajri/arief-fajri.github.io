@@ -91,7 +91,7 @@ section {
     left: -240px;
     background-color: #fdfff0;
     z-index: 1000;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .menu {
     display: flex;
@@ -123,7 +123,7 @@ section {
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 2px;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 .parallax::before{
     content: "";
@@ -180,7 +180,7 @@ section {
     left: -15px;
     border-radius: 0 10px 10px 0;
     background-color: transparent;
-    transition: all 0.5s ease;
+    transition: 0.5s ease;
 }
 #burger+#burger-label span{
     position: absolute;
@@ -358,11 +358,16 @@ section {
 }
 .expertise-certificate div {
     border: 3px solid gray;
-    border-radius: 15px;
     padding: 10px 15px;
     font-size: 1.5rem;
     margin-bottom: 1em;
     width: 100%;
+}
+.expertise-certificate div.odd {
+    border-radius: 0 25px 0 25px;
+}
+.expertise-certificate div.even {
+    border-radius: 25px 0 25px 0;
 }
 .expertise-certificate h2 {
     text-align: center;
@@ -416,44 +421,35 @@ section {
     display: flex;
     flex-direction: column;
 }
-.input-group {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
 .contact-form input, .contact-form textarea {
     width: 100%;
-    padding: 10px;
-    border: 7px solid teal;
+    padding: 8px;
+    border: none;
+    border: 2px solid #4a4a4a;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2em;
+    background-color: transparent;
+    transition: 0.2s ease;
+    margin-bottom: 10px;
 }
 .contact-form input:focus, .contact-form textarea:focus {
     outline: none;
     background-color: lightcyan;
-}
-input.input-except {
-    border-top: unset;
-    border-bottom: unset;
-}
-input.input-left {
-    border-right: 3.5px solid teal;
-    border-radius: 10px 0 0 0;
-}
-input.input-right {
-    border-left: 3.5px solid teal;
-    border-radius: 0 10px 0 0;
+    border: 2px solid teal;
 }
 .contact-form textarea {
-    height:200px;
+    height:150px;
     resize:none;
-    border-radius: 0 0 10px 10px;
+}
+
+#my-form-status {
+    margin-bottom: 0;
+    text-align: center;
 }
 .contact-form button {
     width: 100%;
     padding: 5px;
     background-color: teal;
-    margin-top: 10px;
     border-radius: 10px;
     color: #fdfff0;
     font-weight: bold;
@@ -565,18 +561,6 @@ input.input-right {
     }
     .content {
         padding: 0 1.5em;
-    }
-    .input-group {
-        flex-direction: column;
-    }
-    input.input-left {
-        border-right: 7px solid teal;
-        border-radius: 10px 10px 0 0;
-    }
-    input.input-right {
-        border-left: 7px solid teal;
-        border-top: none;
-        border-radius: 0;
     }
 }
 @media (max-width: 480px) {
