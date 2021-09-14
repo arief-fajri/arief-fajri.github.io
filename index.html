@@ -11,6 +11,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="styles/featherlight.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Arief-Fajri</title>
 </head>
@@ -302,13 +303,16 @@
                     </div>
                 </div>
                 <div class="content work-grid">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                
+                    <a class="work-item" href="#" data-featherlight="#mylightbox">
+                        <img src="images/black.jpg" alt="work1" >
+                        <h1>CEK 1</h1>
+                    </a>
+                    <a class="work-item" href="#" data-featherlight="#mylightbox"></a>
+                    <a class="work-item" href="#" data-featherlight="#mylightbox"></a>
+                
                 </div>
+                <div class="lightbox" id="mylightbox">This div will be opened in a lightbox</div>
             </section>
 
             <section id="contact">
@@ -338,6 +342,7 @@
         </div>
     </div>
     <script src="styles/jquery.min.js"></script>
+    <script src="styles/featherlight.min.js"></script>
     <script>
         var innerHeight = document.body.clientHeight;
         var innerWidtht = document.body.clientWidth;
@@ -349,7 +354,7 @@
             var windowHeight = (40 / 100) * document.body.clientHeight;
             $nav.toggleClass('scrolled', $(this).scrollTop() > windowHeight);
         });
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        document.querySelectorAll('.menu-item').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
 

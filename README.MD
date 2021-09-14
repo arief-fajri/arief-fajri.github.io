@@ -9,8 +9,7 @@ Preview : https://arief-fajri.github.io
 - [x] Expertise Section
 - [ ] Work Section
     - [x] Image Layout
-    - [ ] Add Image Thumbnail
-    - [ ] Add CTA for each images
+    - [x] Add Image Thumbnail
     - [ ] add Display Image & Description
 - [ ] Contact Section
     - [x] Contact Form Layout
