@@ -321,17 +321,26 @@
                 <div class="lightbox" id="mtarget">
                     <img class="img-display" src="images/work/desktop.png" alt="mtarget" >
                     <h1>MTARGET</h1>
-                    <p>A landing page for MTARGET</p>
+                    <p>MTARGET is more than just a software. Whether you wanted to start small or jump right in with the latest technology of integrated cross-channel personalized marketing. We will help you to tailor the software & strategies to bring the highest ROI for your campaign.</p>
+                    <h2>What i do is :</h2>
+                    <p>I convert website designs that have been made by other teams into HTML/CSS lines of code. as well as adding a few lines of Javascript to add value to the user experience.</p>
+                    <br>
+                    <a href="https://github.com/arief-fajri/frontend-test" target="_blank" rel="noreferrer noopener">Source Code</a>
+                    <a href="https://arief-fajri.github.io/frontend-test/" target="_blank" rel="noreferrer noopener">View Page</a>
                 </div>
                 <div class="lightbox" id="dapuribu">
                     <img class="img-display" src="images/work/dapuribu.png" alt="dapur ibu" >
                     <h1>DAPUR IBU</h1>
-                    <p>---</p>
+                    <p>A website application that contains recipes with various categories. Recipe data is taken from a public API cookingapaharini.com</p>
+                    <br>
+                    <a href="https://dapur-ibu.vercel.app" target="_blank" rel="noreferrer noopener">View Website</a>
                 </div>
                 <div class="lightbox" id="travelinfo">
                     <img class="img-display" src="images/work/map-with-route.png" alt="travelinfo" >
                     <h1>TRAVELINFO</h1>
-                    <p>---</p>
+                    <p>This is a private project that aims to promote the potential of special interest tourism in the Wonosobo Regency and surrounding areas.</p>
+                    <br>
+                    <a href="https://travelinfo-cek.vercel.app" target="_blank" rel="noreferrer noopener">View Website</a>
                 </div>
             </section>
 
@@ -377,13 +386,13 @@
         document.querySelectorAll('.menu-item').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                if (innerWidtht < 760) {
-                    $('#burger').prop("checked", false);
-                }
 
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+                if (innerWidtht < 760) {
+                    $('#burger').prop("checked", false);
+                }
             });
         });
 
