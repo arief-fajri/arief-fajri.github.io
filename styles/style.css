@@ -549,17 +549,7 @@ section {
         padding-top: 10vh;
     }
 }
-
-@media (min-width: 1400px) {
-    .hand-left, .hand-right {
-        width: 375px;
-        margin-top: -105px;
-    }
-    .first {
-        margin-top: -10vh;
-    }
-}
-@media (max-width: 960px) {
+@media (max-width: 960px) and (orientation: landscape) {
     .hand-left, .hand-right {
         width: 175px;
         margin-top: -50px;
@@ -580,6 +570,16 @@ section {
     }
     .expertise-skill {
         width: 100%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .hand-left, .hand-right {
+        width: 375px;
+        margin-top: -105px;
+    }
+    .first {
+        margin-top: -10vh;
     }
 }
 @media (max-width: 760px) {
