@@ -367,6 +367,9 @@ section {
     padding: 0 10px;
     border-left: 2px solid lightgrey;
 }
+.profile-anchor {
+    color: #008080;
+}
 .profile-item {
     text-decoration: none;
     color: teal;
