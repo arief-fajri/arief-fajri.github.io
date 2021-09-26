@@ -75,6 +75,7 @@ section {
     min-height: 100vh;
     padding-bottom: 2em;
     background-color: #fdfff0;
+    background-image: url("../images/bg.png");
 }
 .wraper {
     margin: 0 auto;
@@ -91,22 +92,29 @@ section {
     left: -240px;
     background-color: #fdfff0;
     z-index: 1000;
-    transition: 0.2s;
+    transition: 0.2s ease;
+    text-align: center;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto 30px;
+    cursor: pointer;
 }
 .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: auto;
-    height: 100%;
-    justify-content: center;
+    height: calc(100% - 200px);
+    justify-content: start;
 }
 .menu-item {
     text-decoration: none;
     color: #171a1b;
     text-align: center;
     width: 100%;
-    padding: 10px;
+    padding: 0 10px;
     margin: 10px 0;
     letter-spacing: 1px;
 }
@@ -122,43 +130,9 @@ section {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    perspective: 2px;
     transition: 0.2s;
 }
-.parallax::before{
-    content: "";
-    position: absolute;
-    top: -50%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("../images/face.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transform: translateZ(-4px) scale(1.7);
-    z-index: -1;
-}
 
-.mobile-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 55px;
-    z-index: 1000;
-    transition: background-color .5s ease;
-}
-.mobile-header img {
-    float: right;
-    margin-right: 1.5rem;
-    margin-top: 10px;
-    width: 60px;
-    height: 60px;
-}
-.scrolled {
-    background-color: #fdfff0;
-}
 #burger {
     display: contents;
 }
@@ -179,7 +153,7 @@ section {
     top: -20px;
     left: -15px;
     border-radius: 0 10px 10px 0;
-    background-color: transparent;
+    background-color: #fdfff0;
     transition: 0.5s ease;
 }
 #burger+#burger-label span{
@@ -208,9 +182,6 @@ section {
 #burger:checked+#burger-label {
     left: 250px;
     top: 15px;
-}
-#burger:checked+#burger-label::before {
-    background-color: #fdfff0;
 }
 #burger:checked+#burger-label span {
     opacity: 0;
@@ -267,6 +238,28 @@ section {
     background-color: gold;
 }
 
+.first {
+    padding-bottom: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.desc {
+    width: 45%;
+}
+
+.avatar {
+    width: 40%;
+    padding: 20px 0;
+}
+.avatar img {
+    width: 100%;
+}
+
 .intro {
     text-align: center;
     max-width: 480px;
@@ -299,12 +292,6 @@ section {
     text-align: center;
     padding: 0 1em;
 }
-.first {
-    margin-top: -110px;
-    padding: 0;
-    padding-bottom: 3em;
-    max-width: 760px;
-}
 
 .content-wrap {
     width: 100%;
@@ -320,33 +307,8 @@ section {
     align-items: center;
 }
 
-#about {
-    min-height: 40vh;
-    padding-top: 62vh;
-    background-color: transparent;
-    position: relative;
-}
-#about::after {
-    content: '';
-    position: absolute;
-    top: 62vh;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #fdfff0;
-    z-index: -1;
-}
-#work, #expertise, #contact {
+#about, #work, #expertise, #contact {
     padding-top: 2rem;
-}
-.hands {
-    display: flex;
-    justify-content: space-between;
-}
-.hand-left, .hand-right {
-    width: 275px;
-    height: auto;
-    margin-top: -78px;
 }
 
 .profile {
@@ -540,42 +502,7 @@ section {
     background-color: #4a4a4a;
 }
 
-@media (orientation: portrait) {
-    .parallax::before{
-        top: -60%;
-        transform: translateZ(-2px) scale(2);
-    }
-    .hands {
-        display: none;
-    }
-    .first {
-        padding-top: 10vh;
-        margin-top: 0;
-    }
-    #about {
-        padding-top: 55vh;
-    }
-    #about::after {
-        top: 55vh;
-    }
-}
-@media (max-width: 760px) and (orientation: landscape) {
-    .hand-left, .hand-right {
-        width: 150px;
-        margin-top: -43px;
-    }
-    .first {
-        padding-top: 10vh;
-    }
-}
 @media (max-width: 960px) and (orientation: landscape) {
-    .hand-left, .hand-right {
-        width: 175px;
-        margin-top: -50px;
-    }
-    .first {
-        padding-top: 10vh;
-    }
     .expertise-flex {
         flex-direction: column;
     }
@@ -592,15 +519,6 @@ section {
     }
 }
 
-@media (min-width: 1400px) {
-    .hand-left, .hand-right {
-        width: 375px;
-        margin-top: -105px;
-    }
-    .first {
-        margin-top: -10vh;
-    }
-}
 @media (max-width: 760px) {
     #burger:checked ~ .main {
         width: 100%;
@@ -639,7 +557,18 @@ section {
         max-height: 210px;
     }
 }
-@media (max-width: 620px) {
+@media (max-width: 640px) {
+    .first {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .desc {
+        width: 80%;
+        text-align: center;
+    }
+
     .content {
         padding: 0 1.5em;
     }
