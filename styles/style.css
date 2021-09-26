@@ -83,7 +83,7 @@ section {
 
 .nav {
     width: 240px;    
-    border-right: 3px solid #acafa7;
+    border-right: 4px solid #acafa7;
     position: fixed;
     bottom: 0;
     top: 0;
@@ -152,7 +152,7 @@ section {
     top: -20px;
     left: -15px;
     border-radius: 0 10px 10px 0;
-    background-color: #fdfff0;
+    background-color: #e6e7e4;
     transition: 0.5s ease;
 }
 #burger+#burger-label span{
