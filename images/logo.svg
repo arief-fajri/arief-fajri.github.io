@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="510px"
+   height="510px"
+   viewBox="0 0 510 510"
+   enable-background="new 0 0 510 510"
+   xml:space="preserve"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs25" /><sodipodi:namedview
+   id="namedview23"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   inkscape:zoom="0.95882353"
+   inkscape:cx="255"
+   inkscape:cy="255"
+   inkscape:window-width="1366"
+   inkscape:window-height="740"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<circle
+   style="fill:#fdfff0;stroke:none;stroke-width:8.05264;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+   id="path864"
+   cx="255"
+   cy="255"
+   r="250" /><g
+   id="g20"
+   transform="matrix(0.90909091,0,0,0.90909091,23.181818,23.181818)">
+	<g
+   id="g4">
+		<path
+   fill="#231f20"
+   d="M 255,31.041 C 378.491,31.041 478.958,131.509 478.958,255 478.958,378.492 378.491,478.96 255,478.96 131.509,478.96 31.042,378.492 31.042,255 31.042,131.508 131.509,31.041 255,31.041 M 255,5 C 116.948,5 5,116.953 5,255 5,393.047 116.948,505 255,505 393.052,505 505,393.047 505,255 505,116.953 393.052,5 255,5 Z"
+   id="path2" />
+	</g>
+	<g
+   id="g18">
+		<path
+   fill="#231f20"
+   d="m 317.503,364.694 c 0,34.502 -27.99,62.49 -62.503,62.49 -34.513,0 -62.502,-27.988 -62.502,-62.49 0,-34.512 27.989,-62.5 62.502,-62.5 34.513,0 62.503,27.988 62.503,62.5 z"
+   id="path6" />
+		<polygon
+   fill="#231f20"
+   points="428.454,194.489 367.954,249.509 345.931,206.97 428.454,131.979 "
+   id="polygon8" />
+		<path
+   fill="#231f20"
+   d="m 395.426,389.655 c -5.616,4.209 -12.217,6.28 -18.731,6.28 h -53.488 c 4.365,-9.512 6.807,-20.098 6.807,-31.25 0,-4.258 -0.361,-8.437 -1.045,-12.5 h 19.61 l -50.676,-101.592 37.003,-33.564 70.491,135.156 c 5.625,12.958 1.816,28.622 -9.971,37.47 z"
+   id="path10" />
+		<path
+   fill="#231f20"
+   d="M 329.436,206.462 292.696,239.89 255,163.239 l -37.667,76.514 -36.73,-33.369 46.857,-89.648 c 5.352,-9.541 15.831,-15.996 27.55,-15.996 11.709,0 22.178,6.455 27.53,15.996 z"
+   id="path12" />
+		<path
+   fill="#231f20"
+   d="m 179.997,364.684 c 0,11.152 2.432,21.738 6.807,31.25 h -53.488 c -4.697,0 -9.483,-1.084 -13.965,-3.33 -14.903,-7.441 -21.3,-25.322 -14.757,-40.42 l 70.55,-135.068 36.896,33.525 -50.627,101.543 h 19.62 c -0.684,4.063 -1.036,8.243 -1.036,12.5 z"
+   id="path14" />
+		<polygon
+   fill="#231f20"
+   points="141.92,249.509 81.556,194.499 81.556,131.989 164.196,207.097 "
+   id="polygon16" />
+	</g>
+</g>
+</svg>
