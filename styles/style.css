@@ -250,6 +250,7 @@ section {
 
 .desc {
     width: 45%;
+    line-height: initial;
 }
 
 .avatar {
@@ -567,6 +568,11 @@ section {
     .desc {
         width: 80%;
         text-align: center;
+    }
+
+    .avatar {
+        width: 100%;
+        padding: 20px;
     }
 
     .content {
