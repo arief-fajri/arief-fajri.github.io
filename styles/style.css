@@ -74,8 +74,6 @@ a {
 section {
     min-height: 100vh;
     padding-bottom: 2em;
-    background-color: #fdfff0;
-    background-image: url("../images/bg.png");
 }
 .wraper {
     margin: 0 auto;
@@ -90,10 +88,10 @@ section {
     bottom: 0;
     top: 0;
     left: -240px;
-    background-color: #fdfff0;
     z-index: 1000;
     transition: 0.2s ease;
     text-align: center;
+    /*background-color: #e6e7e4;*/
 }
 .logo {
     width: 150px;
@@ -124,13 +122,14 @@ section {
 }
 .main {
     width: 100%;
-    background-color: #e6e7e4;
+    background-color: #fdfff0;
     float: right;
     position: relative;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
     transition: 0.2s;
+    background-image: url("../images/bg.png");
 }
 
 #burger {
