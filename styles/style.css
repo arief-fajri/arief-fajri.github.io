@@ -56,11 +56,12 @@
 
 html, body {
     font-size: 16px;
-    color: #4a4a4a;
+    color: #111;
     font-family: 'B612', sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-image: url("../images/bg.png");
 }
 p {
     font-size: 1.3rem;
@@ -91,7 +92,7 @@ section {
     z-index: 1000;
     transition: 0.2s ease;
     text-align: center;
-    /*background-color: #e6e7e4;*/
+    background-color: #fdfff0;
 }
 .logo {
     width: 150px;
@@ -122,14 +123,12 @@ section {
 }
 .main {
     width: 100%;
-    background-color: #f5f6f7;
     float: right;
     position: relative;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
     transition: 0.2s;
-    background-image: url("../images/bg.png");
 }
 
 #burger {
@@ -147,10 +146,10 @@ section {
 #burger+#burger-label::before {
     content: '';
     position: absolute;
-    width: 60px;
+    width: 65px;
     height: 60px;
     top: -20px;
-    left: -15px;
+    left: -20px;
     border-radius: 0 10px 10px 0;
     background-color: #e6e7e4;
     transition: 0.5s ease;
@@ -164,7 +163,8 @@ section {
     left: 0;
     display: block;
     background: rgb(3, 160, 160);
-    transition: 0.5s;
+    transition: 0.5s ease;
+    color: transparent;
 }
 #burger+#burger-label span:first-child {
     top: 0;
@@ -250,6 +250,12 @@ section {
 .desc {
     width: 45%;
     line-height: initial;
+}
+.desc h1 {
+    font-size: 2em;
+}
+.desc p {
+    font-size: 1.5em;
 }
 
 .avatar {
@@ -353,17 +359,20 @@ section {
 }
 
 .expertise-flex {
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 .expertise-certificate {
-    padding-left: 2em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 .expertise-certificate div {
     border: 3px solid gray;
     padding: 10px 15px;
     font-size: 1.5rem;
-    margin-bottom: 1em;
+    margin: 0 .25em 1em;
     width: 100%;
+    max-width: 360px;
 }
 .expertise-certificate div.odd {
     border-radius: 0 25px 0 25px;
@@ -378,7 +387,7 @@ section {
     margin-bottom: 0.5em;
 }
 .expertise-skill {
-    width: 40%;
+    width: 50%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 1.2em;
@@ -503,17 +512,6 @@ section {
 }
 
 @media (max-width: 960px) and (orientation: landscape) {
-    .expertise-flex {
-        flex-direction: column;
-    }
-    .expertise-certificate {
-        display: flex;
-        padding-left: 0;
-        width: 100%;
-    }
-    .expertise-certificate div:not(:last-child) {
-        margin-right: 1em;
-    }
     .expertise-skill {
         width: 100%;
     }
@@ -582,6 +580,9 @@ section {
     }
 }
 @media (max-width: 480px) {
+    .expertise-certificate {
+        flex-direction: column;
+    }
     .work-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: .7rem;

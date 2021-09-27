@@ -22,14 +22,14 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="2.0632911"
-     inkscape:cx="132.55521"
-     inkscape:cy="143.70245"
+     inkscape:cx="132.55522"
+     inkscape:cy="143.70246"
      inkscape:window-width="1366"
      inkscape:window-height="740"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g48209" />
+     inkscape:current-layer="Circle" />
   <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
   <title
      id="title2">mf-avatar</title>
@@ -89,18 +89,8 @@
          x="0"
          y="0"
          width="100%"
-         height="100%" />
-      <g
-         id="🖍-Circle-Color"
-         mask="url(#mask-2)"
-         fill="#7510f7">
-        <rect
-           id="🖍Color"
-           x="0"
-           y="0"
-           width="216.44536"
-           height="216" />
-      </g>
+         height="100%"
+         style="fill:#008080;fill-opacity:1" />
     </g>
     <mask
        id="mask-4"
@@ -384,13 +374,15 @@
     </g>
     <g
        id="g48706"
-       transform="matrix(0.76508197,0,0,0.76508197,26.37681,38.722047)">
+       transform="matrix(0.76508197,0,0,0.76508197,26.37681,38.722047)"
+       style="fill:#7510f7;fill-opacity:1">
       <g
          id="g48209"
-         transform="matrix(0.9665786,0,0,0.9665786,-245.39689,154.97753)">
+         transform="matrix(0.9665786,0,0,0.9665786,-245.39689,154.97753)"
+         style="fill:#7510f7;fill-opacity:1">
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#c87137;fill-opacity:1;stroke:#ffffff;stroke-width:3.10373;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#7510f7;fill-opacity:1;stroke:#ffffff;stroke-width:3.10373;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
            x="265.98431"
            y="87.467216"
            id="text18619"><tspan
@@ -398,9 +390,9 @@
              id="tspan18617"
              x="265.98431"
              y="87.467216"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:B612;-inkscape-font-specification:'B612 Bold';stroke:#ffffff;stroke-width:3.10373;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers;fill:#c87137">ARIEF FAJRI</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:B612;-inkscape-font-specification:'B612 Bold';stroke:#ffffff;stroke-width:3.10373;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers;fill:#7510f7;fill-opacity:1">ARIEF FAJRI</tspan></text>
         <rect
-           style="fill:#c87137;fill-opacity:1;paint-order:stroke fill markers;stop-color:#000000"
+           style="fill:#7510f7;fill-opacity:1;paint-order:stroke fill markers;stop-color:#000000"
            id="rect33972"
            width="292.08456"
            height="40.800598"
@@ -417,7 +409,7 @@
              id="tspan18617-6"
              x="237.2906"
              y="114.66325"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:B612;-inkscape-font-specification:'B612 Bold';fill:#ffffff">CREATIVE WEB DEVELOPER</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:B612;-inkscape-font-specification:'B612 Bold';fill:#ffffff;fill-opacity:1">CREATIVE WEB DEVELOPER</tspan></text>
       </g>
     </g>
   </g>
