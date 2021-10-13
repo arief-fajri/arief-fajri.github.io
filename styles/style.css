@@ -608,6 +608,6 @@ section {
 @media (max-height: 480px) {
     .menu {
         justify-content: unset;
-        padding-top: 2em;
+        padding: 2em 0;
     }
 }
