@@ -457,6 +457,7 @@ section {
     transform: translate(-50%, -50%);
     color: #fdfff0;
     transition: 0.5s;
+    text-align: center;
 }
 .work-item:hover h1, .work-item:active h1 {
     display: none;
