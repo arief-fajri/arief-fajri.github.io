@@ -298,7 +298,7 @@ section {
 .avatar img {
     width: 100%;
     max-width: 447px;
-    height: auto;
+    height: 100%;
 }
 .intro {
     text-align: center;
