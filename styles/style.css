@@ -496,7 +496,7 @@ section {
 .contact-side img {
     width: auto;
     max-height: 270px;
-    margin-top: -8px;
+    margin-top: 10px;
 }
 .contact-form {
     width: 50%;
