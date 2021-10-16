@@ -344,14 +344,26 @@
                             <div class="side-title">Scan My Email</div>
                         </div>
                         <form id="my-form" class="contact-form" action="https://formspree.io/f/mvodwwzd" method="POST">
-                            <input type="text" id="name" name="name" placeholder="Your Name.." aria-label="Your Name.."
+                            <div class="inputContainer">
+                                <input type="text" id="name" name="name" placeholder="Your Name.." aria-label="Your Name.."
                                 required>
+                                <label for="" class="label">Your Name</label>
+                            </div>
+                            <div class="inputContainer">                  
                             <input type="email" id="email" name="email" placeholder="Your Email.."
                                 aria-label="Your Email.." required>
+                                <label for="" class="label">Your Email</label>
+                                </div>
+                            <div class="inputContainer">
                             <input type="text" id="subject" name="subject" placeholder="Your Subject.."
                                 aria-label="Your Subject.." required>
+                                <label for="" class="label">Your Subject</label>
+                            </div>
+                            <div class="inputContainer">
                             <textarea id="message" name="message" placeholder="Write something.."
                                 aria-label="Write something.."></textarea>
+                                <label for="" class="label">Your Message</label>
+                            </div>
                             <p id="my-form-status"></p>
                             <button type="submit">SEND MESSAGE</button>
                         </form>
