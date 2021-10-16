@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+    box-shadow: 0 0 0 1000px lightcyan inset !important;
+    -webkit-text-fill-color: black !important;
+}
+input:-webkit-autofill::first-line{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+}
+
 /* Placeholder Custom */
 ::-webkit-input-placeholder {
     font-family: 'Courier New', Courier, monospace;
@@ -522,18 +532,20 @@ section {
     left: 10px;
     padding: 0 6px;
     background-color: #fafafa;
-    border: 2px solid teal;
+    border: 2px solid #4a4a4a;
     border-radius: 10px;
     line-height: 1.4;
     font-weight: bold;
     letter-spacing: 2px;
     display: none;
     transition: 0.2s ease;
+    color: #7e7e7e;
 }
 
 .contact-form input:not(:placeholder-shown),
 .contact-form textarea:not(:placeholder-shown){
     padding: 13px 10px 5px;
+    background-color: lightcyan; 
 }
 .contact-form input:not(:placeholder-shown)+ .label,
 .contact-form textarea:not(:placeholder-shown)+ .label {
