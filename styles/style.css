@@ -4,16 +4,6 @@
     box-sizing: border-box;
 }
 
-input:-webkit-autofill,
-textarea:-webkit-autofill {
-    box-shadow: 0 0 0 1000px lightcyan inset !important;
-    -webkit-text-fill-color: black !important;
-}
-input:-webkit-autofill::first-line{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2em;
-}
-
 /* Placeholder Custom */
 ::-webkit-input-placeholder {
     font-family: 'Courier New', Courier, monospace;
@@ -508,7 +498,7 @@ section {
     padding: 10px;
     border: 2px solid #4a4a4a;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2em;
+    font-size: 21px;
     background-color: transparent;
     transition: 0.2s ease;
     border-radius: 10px;
@@ -550,6 +540,15 @@ section {
 .contact-form input:not(:placeholder-shown)+ .label,
 .contact-form textarea:not(:placeholder-shown)+ .label {
     display: block;
+}
+.contact-form input:-webkit-autofill,
+.contact-form textarea:-webkit-autofill {
+    box-shadow: 0 0 0 1000px lightcyan inset !important;
+    -webkit-text-fill-color: black !important;
+}
+.contact-form input:-webkit-autofill::first-line{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 21px;
 }
 
 #my-form-status {
