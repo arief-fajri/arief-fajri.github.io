@@ -418,6 +418,9 @@ section {
 .expertise-skill svg {
     font-size: 5rem;
 }
+.expertise-skill div:hover{
+    color: blueviolet;
+}
 
 .work-grid {
     display: grid;
