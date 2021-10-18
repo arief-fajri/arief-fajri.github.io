@@ -10,7 +10,8 @@ Preview : https://arief-fajri.github.io
 - [x] Work Section
     - [x] Image Layout
     - [x] Add Image Thumbnail
-    - [x] add Display Image & Description
+    - [x] Add Display Image & Description
+    - [x] Add CTA
 - [x] Contact Section
     - [x] Contact Form Layout
     - [x] Add QRcode for Email Address
