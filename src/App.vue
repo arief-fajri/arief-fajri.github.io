@@ -35,6 +35,12 @@
       ></path>
     </svg>
   </a>
+  <input id="burger" type="checkbox" />
+        <label for="burger" id="burger-label" aria-label="menu">
+            <span></span>
+            <span>-</span>
+            <span></span>
+        </label>
   <div id="nav">
     <div class="menu">
       <router-link to="/" class="menu-item">
@@ -152,10 +158,11 @@
   box-sizing: border-box;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'B612', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  line-height: 1.5;
 }
 
 #nav {
@@ -193,6 +200,48 @@
 #nav .menu-item.router-link-exact-active {
   color: teal;
   fill: teal;
+}
+
+#burger {
+    display: contents;
+}
+#burger+#burger-label {
+    position: fixed;
+    top: 10px;
+    left: 250px;
+    height: 20px;
+    width: 30px;
+    z-index: 1000;
+    transition: 0.2s;
+}
+#burger+#burger-label::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 55px;
+    top: -20px;
+    left: -20px;
+    border-radius: 0 10px 10px 0;
+    background-color: #e6e7e4;
+    transition: 0.5s ease;
+}
+#burger+#burger-label span{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 50%;
+    margin-top: -1px;
+    left: 0;
+    display: block;
+    background: rgb(3, 160, 160);
+    transition: 0.5s ease;
+    color: transparent;
+}
+#burger+#burger-label span:first-child {
+    top: 0;
+}
+#burger+#burger-label span:last-child {
+    top: 100%;
 }
 
 .github-corner:hover .octo-arm {
